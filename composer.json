@@ -1,0 +1,18 @@
+{
+    "name": "comercial/upgradegamer-site",
+    "description": "UpgradeGamer-Site",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Guilherme Longhini",
+            "email": "guilhermelonghini@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "require": {}
+}
