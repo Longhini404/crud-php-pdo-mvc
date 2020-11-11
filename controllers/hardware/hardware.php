@@ -9,9 +9,8 @@ try {
     $controller->setAttributes($_REQUEST);
     $mensagem = $controller->$method();
 } catch (\Throwable $th) {
-    $th->getMessage();
-    header('Location: ../../views/hardware/index.php');
+    header('Location: ../../views/hardware/show.php');
     die();
 }
-header('Location: ../../views/hardware/index.php');
+header('Location: ../../views/hardware/show.php');
 die();

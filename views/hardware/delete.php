@@ -8,7 +8,7 @@ require_once '../../vendor/autoload.php';
 $hardware = new \App\Model\Hardware();
 $hardwares = $hardware->delete($_GET["id_hardware"]);
 
-header('Location: ../../views/hardware/index.php');
+header('Location: ../../views/hardware/show.php');
 die();
 
 ?>

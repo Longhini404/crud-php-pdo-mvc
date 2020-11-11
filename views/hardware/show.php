@@ -1,7 +1,6 @@
 <?php
 
 use App\Model\Hardware;
-use App\Helper\Helpers;
 
 require_once '../../vendor/autoload.php';
 
@@ -51,8 +50,8 @@ $hardwares = $hardware->select();
                     <th>Nome</th>
                     <th>Preço</th>
                     <th>Categoria</th>
-                    <th></th>
-                    <th></th>
+                    <th>Editar</th>
+                    <th>Deletar</th>
                 </tr>
             </thead>
             <tbody>
@@ -65,7 +64,7 @@ $hardwares = $hardware->select();
                             <a class="btn btn-warning btn-sm" href="form-edit.php?id_hardware=<?php echo $hardware['id_hardware'] ?>">Editar</a>
                         </td>
                         <td>
-                        <a class="btn btn-danger btn-sm" href="delete.php?id_hardware=<?php echo $hardware['id_hardware'] ?>">Deletar</a>
+                            <a class="btn btn-danger btn-sm" href="delete.php?id_hardware=<?php echo $hardware['id_hardware'] ?>">Deletar</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -77,11 +76,6 @@ $hardwares = $hardware->select();
     <script src="../../assets/js/vendor.js"></script>
     <script src="../../assets/js/app.js"></script>
 
-    <script>
-        $('#myAlert').on('closed.bs.alert', function() {
-            $(".alert").alert('close')
-        })
-    </script>
 </body>
 
 </html>
